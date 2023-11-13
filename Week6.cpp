@@ -6,15 +6,17 @@ using namespace std;
 
 void PopulateArray(float theArray[], int size);
 void DisplayArray(float theArray[], int size);
-
+float GetLargestGrade(float theArray[], int size);
 float GetSmallestGrade(float theArray[], int size);
 float GetAverage(float theArray[], int size);
 
 int main()
 {
+
     constexpr int kSize = 5;
     float myGrades[kSize];
-    cout << " is " << average << endl;
+
+    cout << " is " << GetAverage(myGrades, kSize) << endl;
 
     cout << "Largest grade is: " << GetLargestGrade(myGrades, kSize) << endl;
     cout << "Smallest grade is: " << GetSmallestGrade(myGrades, kSize) << endl;
@@ -22,7 +24,6 @@ int main()
 
 void PopulateArray(float theArray[], int size)
 {
-
     for (int i = 0; i < size; i++)
     {
         cin >> theArray[i];
